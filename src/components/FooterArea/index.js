@@ -26,7 +26,7 @@ const footerLinks = [
 
 const FooterArea = () => {
   const year = new Date().getFullYear().toString();
-  console.log(year);
+
   return (
     <footer className="footerArea">
       <div className="footerTopArea">

@@ -2,20 +2,12 @@ import React, { Fragment } from "react";
 import HeaderBotton from "../../../components/HeaderBottom";
 import HeaderTop from "../../../components/HeaderTop";
 import HeroSlider from "../../../components/HeroSlider";
-import Service from "../../../components/Service";
-import About from "../../../components/About";
 import ServiceArea from "../../../components/ServiceArea";
 import Portfolio from "../../../components/Portfolio";
 import Testmonial from "../../../components/Testmonial";
-import ContactArea from "../../../components/ContactArea";
 import TeamMember from "../../../components/TeamMember";
-import CounterArea from "../../../components/CounterArea";
-import BlogArea from "../../../components/BlogArea";
-import NewsLetter from "../../../components/Newsletter";
 import FooterArea from "../../../components/FooterArea";
-// images
-import about from "../../../images/about/2.jpg";
-import signature from "../../../images/about/1.png";
+import Where from "../../../components/Where";
 
 // images
 import portfolio1 from "../../../images/studies/1.jpg";
@@ -23,15 +15,6 @@ import portfolio2 from "../../../images/studies/2.jpg";
 import portfolio3 from "../../../images/studies/3.jpg";
 import portfolio4 from "../../../images/studies/4.jpg";
 import portfolio5 from "../../../images/studies/5.jpg";
-
-const aboutText = [
-  {
-    text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at ,",
-  },
-  {
-    text: 'and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum',
-  },
-];
 
 const heroSliders = [
   {
@@ -84,11 +67,11 @@ const services = [
 ];
 
 const portfolioItem = [
-  { images: portfolio1, title: "Auto pokorný Brno", subtitle: "Corporate" },
-  { images: portfolio2, title: "Auto pokorný Motors", subtitle: "General" },
-  { images: portfolio3, title: "IVF Zlín", subtitle: "Business" },
-  { images: portfolio4, title: "Decentree", subtitle: "Criminal" },
-  { images: portfolio5, title: "Luftio", subtitle: "Family Issue" },
+  { images: portfolio1, title: "Auto pokorný Brno" },
+  { images: portfolio2, title: "Auto pokorný Motors" },
+  { images: portfolio3, title: "IVF Zlín" },
+  { images: portfolio4, title: "Decentree" },
+  { images: portfolio5, title: "Schuberth Motors" },
 ];
 
 const HomePageOne = () => {
@@ -114,6 +97,7 @@ const HomePageOne = () => {
         subTitle="S kým spolupracujeme"
         portfolioItem={portfolioItem}
       />
+      <Where title="Kde nás najdete" subTitle="Naše sídlo" />
       <FooterArea />
     </Fragment>
   );
