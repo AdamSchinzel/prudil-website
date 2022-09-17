@@ -6,61 +6,49 @@ import SectionTitle from "../Title";
 import "./style.scss";
 
 // images
-import teamMember1 from "../../images/expert/1.jpg";
+import teamMember1 from "../../images/expert/1.png";
 import teamMember2 from "../../images/expert/2.jpg";
 import teamMember3 from "../../images/expert/3.jpg";
 import teamMember4 from "../../images/expert/4.jpg";
-import teamMember5 from "../../images/expert/5.jpg";
-import teamMember6 from "../../images/expert/6.jpg";
 
 const teams = [
   {
-    name: "Alecgander Harry",
-    level: "Business Lawyer",
+    name: "JUDr. Ing. Lukáš Prudil, Ph.D.",
+    level: "Advokát",
     image: teamMember1,
-    socialMedia: ["twitter"],
+    socialMedia: [],
   },
   {
-    name: "Lily Watson",
-    level: "Family Lawyer",
+    name: "Mgr. Leona Prudilová",
+    level: "Advokátka",
     image: teamMember2,
     socialMedia: [],
   },
   {
-    name: "Willam Stephen",
-    level: "Criminal Lawyer",
+    name: "Mgr. Ivana Honzová",
+    level: "Spolupracující advokátka",
     image: teamMember3,
-    socialMedia: ["facebook", "twitter", "linkedin"],
+    socialMedia: [],
   },
   {
-    name: "Eshan Golly",
-    level: "Business Lawyer",
+    name: "Mgr. Vendulka Kalová",
+    level: "Spolupracující advokátka",
     image: teamMember4,
-    socialMedia: ["facebook", "twitter", "linkedin"],
+    socialMedia: [],
   },
   {
-    name: "Daniel Dambeldor",
-    level: "Family Lawyer",
-    image: teamMember5,
-    socialMedia: ["facebook", "twitter", "linkedin"],
-  },
-  {
-    name: "Darcy Alec",
-    level: "Criminal Lawyer",
-    image: teamMember6,
-    socialMedia: ["facebook", "twitter", "linkedin"],
+    name: "Bc. Martina Karásková, DiS.",
+    level: "Vedoucí kanceláře",
+    image: teamMember4,
+    socialMedia: [],
   },
 ];
 
 const settings = {
   dots: false,
-  infinite: true,
   arrows: true,
-  speed: 1000,
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
   responsive: [
     {
       breakpoint: 1024,

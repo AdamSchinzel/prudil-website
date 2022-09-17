@@ -30,7 +30,7 @@ class HeroSlider extends Component {
                       <span>{slider.title}</span> <span>{slider.subTitle}</span>
                     </h2>
                     <div className="btnStyle btnStyle3">
-                      <a href="#">{slider.button}</a>
+                      <a href="mailto: info@prudil.cz">{slider.button}</a>
                     </div>
                   </div>
                 </div>

@@ -1,8 +1,17 @@
-import React from "react";
-import logo from "../../images/logo/logo.png";
+import React, { useState } from "react";
+import { useMediaQuery } from "react-responsive";
+import logo from "../../images/logo/logo.svg";
 import "./style.scss";
 
 const HeaderBottom = (props) => {
+  const [responsive, setResponsive] = useState(false);
+
+  const responsiveHandler = () => {
+    setResponsive(!responsive);
+  };
+
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 800px)" });
+
   return (
     <div className={props.className}>
       <div className="container">
@@ -10,10 +19,10 @@ const HeaderBottom = (props) => {
           <div className="row headerRow">
             <div className="col-lg-3 col-md-10 col-sm-6 col-8">
               <div className="logo">
-                <img src={logo} alt="" />
+                <img src={logo} alt="Logo" />
               </div>
             </div>
-            <div className={"col-lg-8 responsiveWrapper"}>
+            <div className="col-lg-8 responsiveWrapper">
               <ul className="mainMenuWrap">
                 <li>
                   <a href="/#zamereni">Zaměření</a>
@@ -35,6 +44,17 @@ const HeaderBottom = (props) => {
                 </li>
               </ul>
             </div>
+            {isTabletOrMobile && (
+              <div className="col-lg-1 col-md-2 col-sm-6 col-4">
+                <div className="searchMenuWrapper">
+                  <div onClick={responsiveHandler} className="responsiveTrigger">
+                    <span className="first"></span>
+                    <span className="second"></span>
+                    <span className="third"></span>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

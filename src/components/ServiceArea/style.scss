@@ -1,6 +1,11 @@
 .ourServiceArea {
   background: #fff;
   padding: 100px 0px 40px;
+  .text {
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+  }
   .serviceWrap {
     margin-bottom: 60px;
     overflow: hidden;

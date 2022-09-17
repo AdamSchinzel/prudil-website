@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../images/logo/logo.png";
+import logo from "../../images/logo/logo.svg";
 import "./style.scss";
 const footerLinks = [
   {
@@ -32,7 +32,7 @@ const FooterArea = () => {
       <div className="footerTopArea">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3 col-md-6 col-sm-6">
+            <div className="col-lg-3 col-md-6 col-sm-6 mr-5">
               <div className="footerLogo">
                 <img src={logo} alt="" />
               </div>

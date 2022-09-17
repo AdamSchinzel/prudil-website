@@ -48,6 +48,7 @@
         }
         li {
           padding-left: 0;
+          white-space: nowrap;
           @media (max-width: 768px) {
             padding: 0;
           }
@@ -73,7 +74,6 @@
         border-radius: 47px;
         @media (max-width: 1024px) {
           font-size: 12px;
-          padding: 9px;
         }
         &:hover {
           background: #c0b596;

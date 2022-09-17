@@ -6,12 +6,12 @@ const HeaderTop = (props) => {
       <div className="container">
         <div className="headerTopMainWrapper">
           <div className="row headerRow">
-            <div className="col-md-3 col-sm-12 col-12 col-lg-5">
+            <div className="col-md-3 col-sm-12 col-12 col-lg-5 mb-2">
               <ul className="d-flex accountLoginArea">
                 <li>
                   <i className="fa fa-map-marker" aria-hidden="true"></i>Bašty 416/8, 602 00, Brno
                 </li>
-                <a href="tel: +420773601593">
+                <a href="tel: +420773601593" className="ml-4">
                   <li>
                     <i className="fa fa-phone"></i>+420 773 601 593
                   </li>

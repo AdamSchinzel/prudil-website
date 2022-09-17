@@ -2,20 +2,6 @@ import React from "react";
 import SectionTitle from "../Title";
 import "./style.scss";
 
-// images
-import portfolio1 from "../../images/studies/1.jpg";
-import portfolio2 from "../../images/studies/2.jpg";
-import portfolio3 from "../../images/studies/3.jpg";
-import portfolio4 from "../../images/studies/4.jpg";
-import portfolio5 from "../../images/studies/5.jpg";
-
-const portfolioItem = [
-  { images: portfolio1, title: "General Service", subtitle: "Corporate" },
-  { images: portfolio2, title: "Personal Issue", subtitle: "General" },
-  { images: portfolio3, title: "Business Accounting", subtitle: "Business" },
-  { images: portfolio4, title: "Accounting issue", subtitle: "Criminal" },
-  { images: portfolio5, title: "Business Accounting", subtitle: "Family Issue" },
-];
 const Portfolio = ({ title, subTitle, className, fullWidth, portfolioItem }) => {
   return (
     <div className={className} id="partneri">
@@ -31,10 +17,14 @@ const Portfolio = ({ title, subTitle, className, fullWidth, portfolioItem }) => 
         <div className="portfolioWrapper">
           {portfolioItem.map((portfolio, i) => (
             <div key={i} className="portfolioItem">
-              <img src={portfolio.images} alt="" />
-              <div className="portfolioContent">
-                <h3>{portfolio.title}</h3>
-              </div>
+              <a href={portfolio.url} target="_blank">
+                <img src={portfolio.images} alt={"Logo " + portfolio.title} />
+                <div className="portfolioContent">
+                  {portfolio.links.map((link, i) => (
+                    <p key={i}>{link.text}</p>
+                  ))}
+                </div>
+              </a>
             </div>
           ))}
         </div>
@@ -44,8 +34,12 @@ const Portfolio = ({ title, subTitle, className, fullWidth, portfolioItem }) => 
             {portfolioItem.map((portfolio, i) => (
               <div key={i} className="col-lg-4 col-sm-6 col-12">
                 <div key={i} className="portfolioItem">
-                  <img src={portfolio.images} alt="" />
                   <div className="portfolioContent">
+                    {portfolio.links.map((link, i) => (
+                      <a key={i} href={link.url} targer="_blank">
+                        <p>{link.text}</p>
+                      </a>
+                    ))}
                     <h3>{portfolio.title}</h3>
                   </div>
                 </div>
