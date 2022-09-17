@@ -1,4 +1,21 @@
 import React, { Fragment } from "react";
+import {
+  BiPieChartAlt,
+  BiTime,
+  BiDetail,
+  BiCommentCheck,
+  BiPulse,
+  BiBookBookmark,
+  BiBuildings,
+  BiMoney,
+  BiBookOpen,
+  BiBriefcaseAlt,
+  BiRun,
+  BiBody,
+  BiBadgeCheck,
+  BiFile,
+  BiStreetView,
+} from "react-icons/bi";
 import HeaderBottom from "../../../components/HeaderBottom";
 import HeaderTop from "../../../components/HeaderTop";
 import HeroSlider from "../../../components/HeroSlider";
@@ -28,25 +45,137 @@ const heroSliders = [
 
 const services = [
   {
-    icon: "flaticon-parents",
+    icon: <BiPulse color="#c0b596" size="40px" />,
+    title: "Medicínské právo",
+    content: (
+      <ul>
+        <li>- Odpovědnost za škodu způsobenou při výkonu léčebné péče</li>
+        <li>- Trestné činy v souvislosti s výkonem zdravotnického povolání</li>
+        <li>- Náhrada škody</li>
+        <li>- Ochrana přirozených práv člověka</li>
+        <li>
+          - Veškeré právní služby pro poskytovatele zdravotních služeb (tvorba vnitřních předpisů, pracovní smlouvy,
+          smlouvy s dodavateli, smlouvy s pojišťovnami, změna právní formy poskytovatele zdravotních služeb, řízení pro
+          získávání oprávnění poskytovatele zdravotních služeb)
+        </li>
+      </ul>
+    ),
+  },
+  {
+    icon: <BiRun color="#c0b596" size="40px" />,
+    title: "Trestní právo",
+    content: (
+      <ul>
+        <li>- Obhajoby ve všech trestních věcech a stádiích trestního řízení</li>
+        <li>- Řádné i mimořádné opravné prostředky</li>
+        <li>- Mladiství</li>
+        <li>- Vazby</li>
+        <li>- Zastupování proti státu s nároky na náhradu škody</li>
+        <li>
+          - Uplatňování a vymáhání nároků poškozených a zúčastněných osob (včetně uplatnění náhrady nemajetkové újmy v
+          penězích)
+        </li>
+        <li>- Ex offo</li>
+      </ul>
+    ),
+  },
+  {
+    icon: <BiBookBookmark color="#c0b596" size="40px" />,
+    title: "Občanské právo",
+    content: (
+      <ul>
+        <li>- Nemovitosti (pozemky, domy, bytové jednotky, nebytové prostory, spoluvlastnictví, vlastnictví)</li>
+        <li>- Byty (družstevní byty, byty v osobním vlastnictví, převod členství v bytovém družstvu)</li>
+        <li>
+          - Nájmy (nájem a podnájem bytu, nájem a podnájem nebytových prostor, zrušení společného nájmu bytu, výpověď z
+          nájmu, skončení nájmu)
+        </li>
+        <li>
+          - Věcná břemena, zástavy, zajištění závazků (právo doživotního užívání, právo průchodu, právo přístupu,
+          zástava, ručení, svěřenská úschova)
+        </li>
+        <li>- Smlouvy pojmenované i nepojmenované (smlouvy kupní, darovací, vypořádací, o ubytování, o pronájmu)</li>
+        <li>- Ochrana přirozených práv člověka (včetně uplatnění náhrady nemajetkové újmy v penězích)</li>
+        <li>- Právo duševního vlastnictví (autorské právo, ochranné známky, patenty, licence)</li>
+        <li>- Dědictví</li>
+        <li>- Zakládání právnických osob (s.r.o., spolků apod.)</li>{" "}
+        <li>- Civilní žaloby a zastupování při všech civilních věcech a ve všech stádiích civilního řízení</li>
+        <li>- Stížnosti k Evropskému soudu pro lidská práva do Štrasburku</li>
+      </ul>
+    ),
+  },
+  {
+    icon: <BiBody color="#c0b596" size="40px" />,
+    title: "Rodinné právo",
+    content: (
+      <ul>
+        <li>
+          - Vztahy mezi rodiči a dětmi (svěření do péče, úprava vztahů, vyživovací povinnost, alimenty) Vztahy mezi
+          rodiči a dětmi (svěření do péče, úprava vztahů, vyživovací povinnost, alimenty)
+        </li>
+        <li>- Řízení o osvojení dítěte</li>
+        <li>- Právní aspekty náhradního mateřství</li>
+        <li>- Nezletilí, výživné</li>
+        <li>- Majetková práva manželů</li>
+        <li>- Rozvody manželství</li>
+        <li>- Vypořádání majetku po skončení manželství</li>
+      </ul>
+    ),
+  },
+  {
+    icon: <BiBriefcaseAlt color="#c0b596" size="40px" />,
+    title: "Pracovní právo",
+    content: (
+      <ul>
+        <li>- Vztahy z pracovního poměru a nároky z jeho neplatného skončení</li>
+        <li>
+          - Pracovní smlouvy, ukončení pracovního poměru (výpověď, okamžité skončení pracovního poměru, skončení
+          pracovního poměru ve zkušební době)
+        </li>
+        <li>
+          - Odpovědnost za škodu v pracovněprávních vztazích a nároky z ní plynoucí (náhrada za ztrátu na výdělku,
+          bolestné, ztížení společenského uplatnění)
+        </li>
+      </ul>
+    ),
+  },
+  {
+    icon: <BiBadgeCheck color="#c0b596" size="40px" />,
+    title: "Správní právo",
+    content: (
+      <ul>
+        <li>- Katastr nemovitostí - veškerá agenda</li>
+        <li>- Stavební právo včetně zastupování před stavebním úřadem</li>
+        <li>- Přestupky - veškerá agenda včetně zastupování v přestupkovém řízení</li>
+        <li>- Azylové právo</li>
+        <li>- Právo sociálního zabezpečení (starobní důchod, invalidní důchod)</li>
+        <li>- Správní právo pro subjekty ze zdravotnictví</li>
+      </ul>
+    ),
+  },
+];
+
+const awards = [
+  {
+    icon: <BiTime color="#c0b596" size="40px" />,
     title: "Smluvní odměna časová",
     content:
       "Smluvní odměna časová je odměnou, kdy klient platí advokátovi sjednanou odměnu podle počtu hodin právní služby. Při časově nenáročných poradách lze sazbu hodinové odměny poměrně snížit. Při řešení odborně náročné problematiky lze naopak odměnu poměrně zvýšit, stejně tak při řešení problematiky s cizím jazykovým prvkem.",
   },
   {
-    icon: "flaticon-wounded",
+    icon: <BiCommentCheck color="#c0b596" size="40px" />,
     title: "Smluvní odměna úkonová",
     content:
       "Smluvní odměna úkonová je odměna stanovená podle počtu úkonů právní služby, které budou v konkrétní věci učiněny. Co se považuje za úkon právní služby stanoví advokátní tarif. Jedná se např. o převzetí a přípravu právního zastoupení nebo obhajoby, sepis smlouvy, sepis žaloby, sepis odvolání, účast na jednání u soudu apod. Případně lze dohodou stanovit jako úkon právní služby i úkony nad rámec advokátního tarifu, tedy úkon, který není v advokátním tarifu zmíněn.",
   },
   {
-    icon: "flaticon-employee",
+    icon: <BiDetail color="#c0b596" size="40px" />,
     title: "Smluvní odměna paušální",
     content:
       "Smluvní odměna paušální je vhodná pro klienty, kteří mají pravidelnou potřebu právních služeb v určitém stabilním rozsahu, je nabízena možnost hradit právní služby paušální odměnou, tedy dohodnutou pevnou částkou placenou pravidelně (např. měsíčně). Za paušální odměnu jsou klientovi poskytovány právní služby bez ohledu na jejich rozsah v daném období. Paušální odměna přináší klientovi výhodu předvídatelnosti a stabilní výše výdajů na právní služby i v situacích, ve kterých by byl jinak klient vzhledem k vyšší potřebě právních služeb v daném období vystaven nutnosti nést nárazově podstatně vyšší náklady na právní služby.",
   },
   {
-    icon: "flaticon-thief",
+    icon: <BiPieChartAlt color="#c0b596" size="40px" />,
     title: "Smluvní odměna podílová",
     content:
       "Smluvní odměna podílová je odměna, která je dohodou stran stanovena jako podíl podle výsledku věci (tj. procentem z nároku ve věci přiznaného).",
@@ -94,12 +223,18 @@ const HomePageOne = () => {
         <HeaderBottom className="headerBottomArea" />
       </header>
       <HeroSlider sliders={heroSliders} className="heroSliderArea" />
-      <ServiceArea className="ourServiceArea" title="Zaměření" subTitle="Na co se specializujeme" services={services} />
+      <ServiceArea
+        className="ourServiceArea"
+        title="Zaměření"
+        subTitle="Na co se specializujeme"
+        services={services}
+        isMore
+      />
       <ServiceArea
         className="ourServiceArea ourServiceAreaStyleThree"
         title="Odměna"
         subTitle="Jaký je náš honorář"
-        services={services}
+        services={awards}
       />
       <TeamMember title="Kolektiv" subTitle="Kdo u nás pracuje" className="teamArea" slider={true} />
       <Testmonial className="testmonialArea" />

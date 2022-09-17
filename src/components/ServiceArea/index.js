@@ -2,7 +2,7 @@ import React from "react";
 import SectionTitle from "../Title";
 import "./style.scss";
 
-const ServiceArea = ({ className, title, subTitle, services }) => {
+const ServiceArea = ({ className, title, subTitle, services, isMore }) => {
   return (
     <div className={className} id={className === "ourServiceArea" ? "zamereni" : "odmena"}>
       <div className="container">
@@ -13,12 +13,10 @@ const ServiceArea = ({ className, title, subTitle, services }) => {
           {services.map((service, index) => (
             <div key={index} className="col-lg-6 col-md-6">
               <div className="serviceWrap">
-                <div className="serviceIcon">
-                  <i className={`fi ${service.icon}`}></i>
-                </div>
+                <div className="serviceIcon">{service.icon}</div>
                 <div className="serviceContent">
                   <h3>{service.title}</h3>
-                  <p>{service.content}</p>
+                  {className === "ourServiceArea" ? service.content : <p>{service.content}</p>}
                 </div>
               </div>
             </div>
@@ -32,6 +30,13 @@ const ServiceArea = ({ className, title, subTitle, services }) => {
               mezi advokátem a spotřebitelem ze Smluv o poskytování právních služeb je Česká advokátní komora
               (http://www.cak.cz).
             </p>
+          )}
+          {isMore && (
+            <div className="btnContainer">
+              <div className="btnStyle center">
+                <a href="/zamereni">Více</a>
+              </div>
+            </div>
           )}
         </div>
       </div>

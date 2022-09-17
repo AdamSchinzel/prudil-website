@@ -11,11 +11,9 @@ class HeroSlider extends Component {
       dots: true,
       infinite: true,
       arrows: true,
-      speed: 1000,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 3000,
     };
     return (
       <Slider className={this.props.className} {...settings}>

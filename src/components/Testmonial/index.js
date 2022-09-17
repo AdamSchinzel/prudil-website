@@ -39,7 +39,7 @@ const Testmonial = ({ className }) => {
         <div className="row">
           <div className="col-lg-4 col-md-6">
             <div className="testimonialImages">
-              <img src={testmonial} alt="" />
+              <img src={testmonial} alt="Noviny" />
             </div>
           </div>
           <div className="col-lg-7 offset-lg-1 col-md-6">

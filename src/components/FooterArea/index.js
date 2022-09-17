@@ -34,7 +34,7 @@ const FooterArea = () => {
           <div className="row">
             <div className="col-lg-3 col-md-6 col-sm-6 mr-5">
               <div className="footerLogo">
-                <img src={logo} alt="" />
+                <img src={logo} alt="Logo" />
               </div>
             </div>
             {footerLinks.map((menu, i) => (

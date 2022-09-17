@@ -19,7 +19,9 @@ const HeaderBottom = (props) => {
           <div className="row headerRow">
             <div className="col-lg-3 col-md-10 col-sm-6 col-8">
               <div className="logo">
-                <img src={logo} alt="Logo" />
+                <a href="/">
+                  <img src={logo} alt="Logo" />
+                </a>
               </div>
             </div>
             <div className="col-lg-8 responsiveWrapper">
