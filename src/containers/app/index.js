@@ -12,7 +12,7 @@ class App extends Component {
           <ToastContainer autoClose={2500} position="top-center" />
           <Switch>
             <Route exact path="/" component={HomePageOne} />
-            <Route path="zamereni" component={PracticePage} />
+            <Route exact path="/test" component={HomePageOne} />
           </Switch>
         </BrowserRouter>
       </Fragment>
