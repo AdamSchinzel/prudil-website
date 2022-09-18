@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SectionTitle from "../Title";
 import "./style.scss";
 
@@ -34,7 +35,7 @@ const ServiceArea = ({ className, title, subTitle, services, isMore }) => {
           {isMore && (
             <div className="btnContainer">
               <div className="btnStyle center">
-                <a href="/zamereni">Více</a>
+                <Link to="/zamereni">Více</Link>
               </div>
             </div>
           )}
