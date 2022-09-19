@@ -2,9 +2,9 @@ import React from "react";
 import { BiMap, BiPhone } from "react-icons/bi";
 import "./style.scss";
 
-const HeaderTop = (props) => {
+const HeaderTop = ({ className }) => {
   return (
-    <div className={props.className}>
+    <div className={className}>
       <div className="container">
         <div className="headerTopMainWrapper">
           <div className="row headerRow">

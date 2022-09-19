@@ -3,7 +3,7 @@ import { useMediaQuery } from "react-responsive";
 import logo from "../../images/logo/logo.svg";
 import "./style.scss";
 
-const HeaderBottom = (props) => {
+const HeaderBottom = ({ className }) => {
   const [responsive, setResponsive] = useState(false);
 
   const responsiveHandler = () => {
@@ -13,7 +13,7 @@ const HeaderBottom = (props) => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 800px)" });
 
   return (
-    <div className={props.className}>
+    <div className={className}>
       <div className="container">
         <div className="headerBottomMainWrapper">
           <div className="row headerRow">
@@ -63,4 +63,5 @@ const HeaderBottom = (props) => {
     </div>
   );
 };
+
 export default HeaderBottom;

@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../images/logo/logo.svg";
 import "./style.scss";
+
 const footerLinks = [
   {
     title: "Menu",
@@ -66,4 +67,5 @@ const FooterArea = () => {
     </footer>
   );
 };
+
 export default FooterArea;

@@ -2,14 +2,14 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import SectionTitle from "../Title";
+import SectionTitle from "../SectionTitle";
 import "./style.scss";
 
 // images
-import teamMember1 from "../../images/expert/1.png";
-import teamMember2 from "../../images/expert/2.jpg";
-import teamMember3 from "../../images/expert/3.jpg";
-import teamMember4 from "../../images/expert/4.jpg";
+import teamMember1 from "../../images/team/1.png";
+import teamMember2 from "../../images/team/2.jpg";
+import teamMember3 from "../../images/team/3.jpg";
+import teamMember4 from "../../images/team/4.jpg";
 
 const teams = [
   {
@@ -140,4 +140,5 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
     </div>
   );
 };
+
 export default TeamMember;

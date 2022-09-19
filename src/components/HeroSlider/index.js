@@ -40,4 +40,5 @@ class HeroSlider extends Component {
     );
   }
 }
+
 export default HeroSlider;

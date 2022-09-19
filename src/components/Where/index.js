@@ -1,5 +1,5 @@
 import React from "react";
-import SectionTitle from "../Title";
+import SectionTitle from "../SectionTitle";
 import "./style.scss";
 
 const Where = ({ title, subTitle, className }) => {
@@ -10,9 +10,10 @@ const Where = ({ title, subTitle, className }) => {
           <div className="col-12">
             <SectionTitle title={title} subTitle={subTitle} />
           </div>
-          <div class="mapouter">
-            <div class="gmap_canvas">
+          <div className="mapouter">
+            <div className="gmap_canvas">
               <iframe
+                title="map1"
                 width="600"
                 height="450"
                 style={{ border: "none" }}
@@ -21,9 +22,10 @@ const Where = ({ title, subTitle, className }) => {
                 src="https://www.google.com/maps/embed/v1/place?q=Ba%C5%A1ty%20416%2F8&key=AIzaSyBi8XH7TzBpEdcWdMg6PKGL8lp_hr-LCu4"></iframe>
             </div>
           </div>
-          <div class="mapouter">
-            <div class="gmap_canvas">
+          <div className="mapouter">
+            <div className="gmap_canvas">
               <iframe
+                title="map2"
                 width="600"
                 style={{ border: "none" }}
                 height="450"

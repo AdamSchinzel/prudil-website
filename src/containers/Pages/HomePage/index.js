@@ -16,18 +16,18 @@ import HeaderBottom from "../../../components/HeaderBottom";
 import HeaderTop from "../../../components/HeaderTop";
 import HeroSlider from "../../../components/HeroSlider";
 import ServiceArea from "../../../components/ServiceArea";
-import Portfolio from "../../../components/Portfolio";
-import Testmonial from "../../../components/Testmonial";
+import Partners from "../../../components/Partners";
+import Articles from "../../../components/Articles";
 import TeamMember from "../../../components/TeamMember";
 import Footer from "../../../components/Footer";
 import Where from "../../../components/Where";
 
 // images
-import portfolio1 from "../../../images/studies/1.png";
-import portfolio2 from "../../../images/studies/2.png";
-import portfolio3 from "../../../images/studies/3.png";
-import portfolio4 from "../../../images/studies/4.png";
-import portfolio5 from "../../../images/studies/5.png";
+import partner1 from "../../../images/partners/1.png";
+import partner2 from "../../../images/partners/2.png";
+import partner3 from "../../../images/partners/3.png";
+import partner4 from "../../../images/partners/4.png";
+import partner5 from "../../../images/partners/5.png";
 
 const heroSliders = [
   {
@@ -180,31 +180,31 @@ const awards = [
 
 const portfolioItem = [
   {
-    images: portfolio1,
+    images: partner1,
     title: "Auto pokorný Brno",
     url: "http://www.autopokorny.cz/",
     links: [{ text: "autopokorny.cz" }, { text: "renaultbrno.cz" }, { text: "daciabrno.cz" }],
   },
   {
-    images: portfolio2,
+    images: partner2,
     title: "Auto pokorný Motors",
     url: "https://autopokorny.hyundai.cz/",
     links: [{ text: "hyundaivbrne.cz" }],
   },
   {
-    images: portfolio3,
+    images: partner3,
     title: "IVF Zlín",
     url: "https://www.ivf-zlin.cz/",
     links: [{ text: "ivf-zlin.com" }],
   },
   {
-    images: portfolio4,
+    images: partner4,
     title: "Decentree",
     url: "https://decentree.com/",
     links: [{ text: "decentree.com" }],
   },
   {
-    images: portfolio5,
+    images: partner5,
     title: "Schuberth Motors",
     url: "https://www.dualtronkolobezky.cz/",
     links: [{ text: "dualtronkolobezky.cz" }],
@@ -233,8 +233,8 @@ const HomePage = () => {
         services={awards}
       />
       <TeamMember title="Kolektiv" subTitle="Kdo u nás pracuje" className="teamArea" slider={true} />
-      <Testmonial className="testmonialArea" />
-      <Portfolio
+      <Articles className="testmonialArea" />
+      <Partners
         className="portfolioArea"
         title="Naši Partněri"
         subTitle="S kým spolupracujeme"

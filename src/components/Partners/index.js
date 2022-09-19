@@ -1,8 +1,8 @@
 import React from "react";
-import SectionTitle from "../Title";
+import SectionTitle from "../SectionTitle";
 import "./style.scss";
 
-const Portfolio = ({ title, subTitle, className, portfolioItem }) => {
+const Partners = ({ title, subTitle, className, portfolioItem }) => {
   return (
     <div className={className} id="partneri">
       <div className="container">
@@ -15,7 +15,7 @@ const Portfolio = ({ title, subTitle, className, portfolioItem }) => {
       <div className="portfolioWrapper">
         {portfolioItem.map((portfolio, i) => (
           <div key={i} className="portfolioItem">
-            <a href={portfolio.url} target="_blank">
+            <a href={portfolio.url} target="_blank" rel="noopener noreferrer">
               <img src={portfolio.images} alt={"Logo " + portfolio.title} />
               <div className="portfolioContent">
                 {portfolio.links.map((link, i) => (
@@ -29,4 +29,5 @@ const Portfolio = ({ title, subTitle, className, portfolioItem }) => {
     </div>
   );
 };
-export default Portfolio;
+
+export default Partners;

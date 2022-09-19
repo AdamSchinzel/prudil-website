@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.scss";
+
 const SectionTitle = ({ subTitle, title }) => {
   return (
     <div className="sectionTitle">
@@ -8,4 +9,5 @@ const SectionTitle = ({ subTitle, title }) => {
     </div>
   );
 };
+
 export default SectionTitle;

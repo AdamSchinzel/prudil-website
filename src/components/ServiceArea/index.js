@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
-import SectionTitle from "../Title";
+import SectionTitle from "../SectionTitle";
 import "./style.scss";
 
 const ServiceArea = ({ className, title, subTitle, services, isMore }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div className={className} id={className === "ourServiceArea" ? "zamereni" : "odmena"}>
       <div className="container">
@@ -49,4 +49,5 @@ const ServiceArea = ({ className, title, subTitle, services, isMore }) => {
     </div>
   );
 };
+
 export default ServiceArea;

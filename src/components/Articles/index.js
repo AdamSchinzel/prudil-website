@@ -5,19 +5,19 @@ import "slick-carousel/slick/slick-theme.css";
 import "./style.scss";
 
 // images
-import testmonial from "../../images/testimonial/1.png";
-import testmonial2 from "../../images/testimonial/2.png";
+import article1 from "../../images/articles/1.png";
+import article2 from "../../images/articles/2.png";
 
 const sliders = [
   {
     text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-    images: testmonial2,
+    images: article2,
     title: "Jhony Goaver",
     subTitle: "CEO of American BDS",
   },
   {
     text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-    images: testmonial2,
+    images: article2,
     title: "Jhony Goaver",
     subTitle: "CEO of American BDS",
   },
@@ -32,14 +32,15 @@ const settings = {
   autoplay: true,
   autoplaySpeed: 3000,
 };
-const Testmonial = ({ className }) => {
+
+const Articles = ({ className }) => {
   return (
     <div className={className} id="clanky">
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-6">
             <div className="testimonialImages">
-              <img src={testmonial} alt="Noviny" />
+              <img src={article1} alt="Noviny" />
             </div>
           </div>
           <div className="col-lg-7 offset-lg-1 col-md-6">
@@ -69,4 +70,5 @@ const Testmonial = ({ className }) => {
     </div>
   );
 };
-export default Testmonial;
+
+export default Articles;
