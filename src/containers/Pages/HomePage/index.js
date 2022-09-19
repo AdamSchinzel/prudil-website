@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import {
   BiPieChartAlt,
   BiTime,
@@ -6,16 +6,12 @@ import {
   BiCommentCheck,
   BiPulse,
   BiBookBookmark,
-  BiBuildings,
-  BiMoney,
-  BiBookOpen,
   BiBriefcaseAlt,
   BiRun,
   BiBody,
   BiBadgeCheck,
-  BiFile,
-  BiStreetView,
 } from "react-icons/bi";
+
 import HeaderBottom from "../../../components/HeaderBottom";
 import HeaderTop from "../../../components/HeaderTop";
 import HeroSlider from "../../../components/HeroSlider";
@@ -23,7 +19,7 @@ import ServiceArea from "../../../components/ServiceArea";
 import Portfolio from "../../../components/Portfolio";
 import Testmonial from "../../../components/Testmonial";
 import TeamMember from "../../../components/TeamMember";
-import FooterArea from "../../../components/FooterArea";
+import Footer from "../../../components/Footer";
 import Where from "../../../components/Where";
 
 // images
@@ -215,9 +211,9 @@ const portfolioItem = [
   },
 ];
 
-const HomePageOne = () => {
+const HomePage = () => {
   return (
-    <Fragment>
+    <>
       <header className="headerArea">
         <HeaderTop className="headerTop" />
         <HeaderBottom className="headerBottomArea" />
@@ -245,8 +241,9 @@ const HomePageOne = () => {
         portfolioItem={portfolioItem}
       />
       <Where title="Kde nás najdete" subTitle="Naše sídlo" />
-      <FooterArea />
-    </Fragment>
+      <Footer />
+    </>
   );
 };
-export default HomePageOne;
+
+export default HomePage;

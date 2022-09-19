@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import HeaderBotton from "../../../components/HeaderBottom";
 import HeaderTop from "../../../components/HeaderTop";
 import Breadcumb from "../../../components/Breadcumb";
@@ -45,7 +45,7 @@ const portfolioItem = [
 
 const SingleTeamPage = () => {
   return (
-    <Fragment>
+    <>
       <header className="headerArea">
         <HeaderTop className="headerTop" />
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
@@ -138,7 +138,7 @@ const SingleTeamPage = () => {
       <ContactArea className="contactArea" />
       <NewsLetter className="newsLetterArea" />
       <FooterArea />
-    </Fragment>
+    </>
   );
 };
 export default SingleTeamPage;

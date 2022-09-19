@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import "../src/css/flaticon.css";
-import "../src/css/odometer-theme-default.css";
 import "../src/css/animate.css";
+import "./index.scss";
+
 import App from "../src/containers/app";
 import * as serviceWorker from "./serviceWorker";
 
-import "./index.scss";
 const app = <App />;
 
 ReactDOM.render(app, document.getElementById("root"));

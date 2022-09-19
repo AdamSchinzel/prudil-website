@@ -1,28 +1,21 @@
 {
   "name": "prudil-website",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "author": "Adam Schinzel <schinzel.adam@gmail.com>",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
     "babel-jest": "24.7.1",
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
-    "joi-browser": "^13.4.0",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-icons": "^4.4.0",
-    "react-modal-video": "^1.2.2",
-    "react-odometerjs": "^2.1.1",
-    "react-redux": "^7.0.3",
     "react-responsive": "^9.0.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0",
     "react-slick": "^0.24.0",
-    "react-toastify": "^5.1.0",
     "reactstrap": "^8.0.0",
-    "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0",
     "sass-loader": "^7.1.0",
     "slick-carousel": "^1.8.1"
   },
@@ -30,11 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "type-check": "tsc"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "eject": "react-scripts eject"
   },
   "browserslist": {
     "production": [

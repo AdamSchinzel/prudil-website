@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import {
   BiPulse,
   BiBookBookmark,
@@ -15,7 +15,7 @@ import {
 import HeaderBottom from "../../../components/HeaderBottom";
 import HeaderTop from "../../../components/HeaderTop";
 import ServiceArea from "../../../components/ServiceArea";
-import FooterArea from "../../../components/FooterArea";
+import Footer from "../../../components/Footer";
 
 const services = [
   {
@@ -183,16 +183,16 @@ const services = [
   },
 ];
 
-const HomePageOne = () => {
+const ServicesPage = () => {
   return (
-    <Fragment>
+    <>
       <header className="headerArea">
         <HeaderTop className="headerTop" />
         <HeaderBottom className="headerBottomArea" />
       </header>
       <ServiceArea className="ourServiceArea" title="Zaměření" subTitle="Na co se specializujeme" services={services} />
-      <FooterArea />
-    </Fragment>
+      <Footer />
+    </>
   );
 };
-export default HomePageOne;
+export default ServicesPage;

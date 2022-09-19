@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -110,7 +110,7 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
               </Slider>
             </div>
           ) : (
-            <Fragment>
+            <>
               {teams.map((team, i) => (
                 <div key={i} className="col-lg-4 col-md-6 col-12">
                   <div className="teamWrapper">
@@ -133,7 +133,7 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
                   </div>
                 </div>
               ))}
-            </Fragment>
+            </>
           )}
         </div>
       </div>
