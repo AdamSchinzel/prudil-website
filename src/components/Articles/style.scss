@@ -49,24 +49,12 @@
     .testmonialSlider {
       .slideItem {
         p {
-          padding: 20px 33px 30px;
+          padding: 0;
           padding-right: 50px;
           position: relative;
           @media (max-width: 768px) {
             padding: 20px 15px 15px;
             padding-right: 0px;
-          }
-          &::before {
-            position: absolute;
-            left: 4px;
-            top: 5px;
-            content: "\f10d";
-            font-family: "FontAwesome";
-            color: #c0b596;
-            font-size: 30px;
-            @media (max-width: 768px) {
-              font-size: 20px;
-            }
           }
         }
         .thumbWrap {
@@ -91,12 +79,12 @@
           }
           .imgContent {
             h4 {
-              font-size: 18px;
+              font-size: 14px;
               font-family: "Open Sans", sans-serif;
               font-weight: 600;
             }
             span {
-              font-size: 16px;
+              font-size: 14px;
               color: #666;
             }
           }

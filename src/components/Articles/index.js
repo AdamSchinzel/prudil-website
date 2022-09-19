@@ -6,27 +6,39 @@ import "./style.scss";
 
 // images
 import article1 from "../../images/articles/1.png";
-import article2 from "../../images/articles/2.png";
 
 const sliders = [
   {
-    text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-    images: article2,
-    title: "Jhony Goaver",
-    subTitle: "CEO of American BDS",
+    text: "Náhradní mateřství: stav v České republice a odpovědnost praktického lékaře",
+    title: "2018",
+    url: "https://www.muni.cz/en/research/publications/1498582",
   },
   {
-    text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-    images: article2,
-    title: "Jhony Goaver",
-    subTitle: "CEO of American BDS",
+    text: "Právo pro zdravotnické pracovníky",
+    title: "2017",
+    url: "https://www.muni.cz/en/research/publications/1378672",
+  },
+  {
+    text: "V jedné ruce občanský zákoník, v druhé zákon o zdravotní péči, a už se nechytáte",
+    title: "2014",
+    url: "https://www.muni.cz/en/research/publications/1211803",
+  },
+  {
+    text: "Máme ústavní oporu pro provádění eutanazie?",
+    title: "2012",
+    url: "https://www.muni.cz/en/research/publications/1075257",
+  },
+  {
+    text: "Poskytování informací pacientovi a dalším osobám",
+    title: "2012",
+    url: "https://www.muni.cz/en/research/publications/1546272",
   },
 ];
 const settings = {
   dots: true,
   infinite: true,
   arrows: false,
-  speed: 1000,
+  speed: 4000,
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
@@ -49,18 +61,16 @@ const Articles = ({ className }) => {
               <h2>Články</h2>
               <Slider className="testmonialSlider" {...settings}>
                 {sliders.map((slider, i) => (
-                  <div key={i} className="slideItem">
-                    <p>{slider.text}</p>
-                    <div className="thumbWrap">
-                      <div className="thumbImg">
-                        <img src={slider.images} alt="" />
-                      </div>
-                      <div className="imgContent">
-                        <h4>{slider.title}</h4>
-                        <span>{slider.subTitle}</span>
+                  <a href={slider.url} target="_blank" rel="noopener noreferrer">
+                    <div key={i} className="slideItem">
+                      <p>{slider.text}</p>
+                      <div className="thumbWrap">
+                        <div className="imgContent">
+                          <h4>{slider.title}</h4>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 ))}
               </Slider>
             </div>

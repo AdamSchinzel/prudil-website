@@ -54,6 +54,58 @@ const services = [
     ),
   },
   {
+    icon: <BiBuildings color="#c0b596" size="40px" />,
+    title: "Obchodní a korporační právo",
+    content: (
+      <ul>
+        <li>- Obchodní právo pro subjekty ze zdravotnictví</li>
+        <li>- Zakládání obchodních korporací</li>
+        <li>- Změny v obchodních korporacích</li>
+        <li>- Organizace řízení valných hromad</li>
+        <li>- Zastupování při jednáních s obchodními partnery klienta</li>
+        <li>- Obchodní rejstřík - veškerá agenda</li>
+        <li>- Likvidace obchodních společností</li>
+        <li>- Nekalá soutěž</li>
+        <li>- Prodej a transformace závodu</li>
+        <li>
+          - Obchodní smlouvy pojmenované i nepojmenované (smlouva kupní, o obchodním zastoupení, o výhradním prodeji, o
+          dílo, o přepravě)
+        </li>
+      </ul>
+    ),
+  },
+  {
+    icon: <BiBriefcaseAlt color="#c0b596" size="40px" />,
+    title: "Pracovní právo",
+    content: (
+      <ul>
+        <li>- Vztahy z pracovního poměru a nároky z jeho neplatného skončení</li>
+        <li>
+          - Pracovní smlouvy, ukončení pracovního poměru (výpověď, okamžité skončení pracovního poměru, skončení
+          pracovního poměru ve zkušební době)
+        </li>
+        <li>
+          - Odpovědnost za škodu v pracovněprávních vztazích a nároky z ní plynoucí (náhrada za ztrátu na výdělku,
+          bolestné, ztížení společenského uplatnění)
+        </li>
+      </ul>
+    ),
+  },
+  {
+    icon: <BiBadgeCheck color="#c0b596" size="40px" />,
+    title: "Správní právo",
+    content: (
+      <ul>
+        <li>- Katastr nemovitostí - veškerá agenda</li>
+        <li>- Stavební právo včetně zastupování před stavebním úřadem</li>
+        <li>- Přestupky - veškerá agenda včetně zastupování v přestupkovém řízení</li>
+        <li>- Azylové právo</li>
+        <li>- Právo sociálního zabezpečení (starobní důchod, invalidní důchod)</li>
+        <li>- Správní právo pro subjekty ze zdravotnictví</li>
+      </ul>
+    ),
+  },
+  {
     icon: <BiBookBookmark color="#c0b596" size="40px" />,
     title: "Občanské právo",
     content: (
@@ -93,58 +145,6 @@ const services = [
         <li>- Majetková práva manželů</li>
         <li>- Rozvody manželství</li>
         <li>- Vypořádání majetku po skončení manželství</li>
-      </ul>
-    ),
-  },
-  {
-    icon: <BiBriefcaseAlt color="#c0b596" size="40px" />,
-    title: "Pracovní právo",
-    content: (
-      <ul>
-        <li>- Vztahy z pracovního poměru a nároky z jeho neplatného skončení</li>
-        <li>
-          - Pracovní smlouvy, ukončení pracovního poměru (výpověď, okamžité skončení pracovního poměru, skončení
-          pracovního poměru ve zkušební době)
-        </li>
-        <li>
-          - Odpovědnost za škodu v pracovněprávních vztazích a nároky z ní plynoucí (náhrada za ztrátu na výdělku,
-          bolestné, ztížení společenského uplatnění)
-        </li>
-      </ul>
-    ),
-  },
-  {
-    icon: <BiBadgeCheck color="#c0b596" size="40px" />,
-    title: "Správní právo",
-    content: (
-      <ul>
-        <li>- Katastr nemovitostí - veškerá agenda</li>
-        <li>- Stavební právo včetně zastupování před stavebním úřadem</li>
-        <li>- Přestupky - veškerá agenda včetně zastupování v přestupkovém řízení</li>
-        <li>- Azylové právo</li>
-        <li>- Právo sociálního zabezpečení (starobní důchod, invalidní důchod)</li>
-        <li>- Správní právo pro subjekty ze zdravotnictví</li>
-      </ul>
-    ),
-  },
-  {
-    icon: <BiBuildings color="#c0b596" size="40px" />,
-    title: "Obchodní a korporační právo",
-    content: (
-      <ul>
-        <li>- Obchodní právo pro subjekty ze zdravotnictví</li>
-        <li>- Zakládání obchodních korporací</li>
-        <li>- Změny v obchodních korporacích</li>
-        <li>- Organizace řízení valných hromad</li>
-        <li>- Zastupování při jednáních s obchodními partnery klienta</li>
-        <li>- Obchodní rejstřík - veškerá agenda</li>
-        <li>- Likvidace obchodních společností</li>
-        <li>- Nekalá soutěž</li>
-        <li>- Prodej a transformace závodu</li>
-        <li>
-          - Obchodní smlouvy pojmenované i nepojmenované (smlouva kupní, o obchodním zastoupení, o výhradním prodeji, o
-          dílo, o přepravě)
-        </li>
       </ul>
     ),
   },

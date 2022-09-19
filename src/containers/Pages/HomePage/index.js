@@ -5,7 +5,7 @@ import {
   BiDetail,
   BiCommentCheck,
   BiPulse,
-  BiBookBookmark,
+  BiBuildings,
   BiBriefcaseAlt,
   BiRun,
   BiBody,
@@ -76,24 +76,23 @@ const services = [
     ),
   },
   {
-    icon: <BiBookBookmark color="#c0b596" size="40px" />,
-    title: "Občanské právo",
+    icon: <BiBuildings color="#c0b596" size="40px" />,
+    title: "Obchodní a korporační právo",
     content: (
       <ul>
-        <li>- Nemovitosti (pozemky, domy, bytové jednotky, nebytové prostory, spoluvlastnictví, vlastnictví)</li>
-        <li>- Byty (družstevní byty, byty v osobním vlastnictví, převod členství v bytovém družstvu)</li>
-        <li>- Nájmy</li>
+        <li>- Obchodní právo pro subjekty ze zdravotnictví</li>
+        <li>- Zakládání obchodních korporací</li>
+        <li>- Změny v obchodních korporacích</li>
+        <li>- Organizace řízení valných hromad</li>
+        <li>- Zastupování při jednáních s obchodními partnery klienta</li>
+        <li>- Obchodní rejstřík - veškerá agenda</li>
+        <li>- Likvidace obchodních společností</li>
+        <li>- Nekalá soutěž</li>
+        <li>- Prodej a transformace závodu</li>
         <li>
-          - Věcná břemena, zástavy, zajištění závazků (právo doživotního užívání, právo průchodu, právo přístupu,
-          zástava, ručení, svěřenská úschova)
+          - Obchodní smlouvy pojmenované i nepojmenované (smlouva kupní, o obchodním zastoupení, o výhradním prodeji, o
+          dílo, o přepravě)
         </li>
-        <li>- Smlouvy pojmenované i nepojmenované (smlouvy kupní, darovací, vypořádací, o ubytování, o pronájmu)</li>
-        <li>- Ochrana přirozených práv člověka (včetně uplatnění náhrady nemajetkové újmy v penězích)</li>
-        <li>- Právo duševního vlastnictví (autorské právo, ochranné známky, patenty, licence)</li>
-        <li>- Dědictví</li>
-        <li>- Zakládání právnických osob (s.r.o., spolků apod.)</li>
-        <li>- Civilní žaloby a zastupování při všech civilních věcech a ve všech stádiích civilního řízení</li>
-        <li>- Stížnosti k Evropskému soudu pro lidská práva do Štrasburku</li>
       </ul>
     ),
   },
