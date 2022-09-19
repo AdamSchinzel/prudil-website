@@ -38,9 +38,7 @@ const ServiceArea = ({ className, title, subTitle, services, isMore }) => {
           {isMore && (
             <div className="btnContainer">
               <div className="btnStyle center">
-                <a href="/zamereni" preventScrollReset={false}>
-                  Více
-                </a>
+                <a href="/zamereni">Více</a>
               </div>
             </div>
           )}
