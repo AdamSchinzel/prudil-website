@@ -82,10 +82,7 @@ const services = [
       <ul>
         <li>- Nemovitosti (pozemky, domy, bytové jednotky, nebytové prostory, spoluvlastnictví, vlastnictví)</li>
         <li>- Byty (družstevní byty, byty v osobním vlastnictví, převod členství v bytovém družstvu)</li>
-        <li>
-          - Nájmy (nájem a podnájem bytu, nájem a podnájem nebytových prostor, zrušení společného nájmu bytu, výpověď z
-          nájmu, skončení nájmu)
-        </li>
+        <li>- Nájmy</li>
         <li>
           - Věcná břemena, zástavy, zajištění závazků (právo doživotního užívání, právo průchodu, právo přístupu,
           zástava, ručení, svěřenská úschova)
@@ -94,7 +91,7 @@ const services = [
         <li>- Ochrana přirozených práv člověka (včetně uplatnění náhrady nemajetkové újmy v penězích)</li>
         <li>- Právo duševního vlastnictví (autorské právo, ochranné známky, patenty, licence)</li>
         <li>- Dědictví</li>
-        <li>- Zakládání právnických osob (s.r.o., spolků apod.)</li>{" "}
+        <li>- Zakládání právnických osob (s.r.o., spolků apod.)</li>
         <li>- Civilní žaloby a zastupování při všech civilních věcech a ve všech stádiích civilního řízení</li>
         <li>- Stížnosti k Evropskému soudu pro lidská práva do Štrasburku</li>
       </ul>
@@ -156,7 +153,7 @@ const awards = [
     icon: <BiTime color="#c0b596" size="40px" />,
     title: "Smluvní odměna časová",
     content:
-      "Smluvní odměna časová je odměnou, kdy klient platí advokátovi sjednanou odměnu podle počtu hodin právní služby. Při časově nenáročných poradách lze sazbu hodinové odměny poměrně snížit. Při řešení odborně náročné problematiky lze naopak odměnu poměrně zvýšit, stejně tak při řešení problematiky s cizím jazykovým prvkem.",
+      "Smluvní odměna časová je odměnou, kdy klient platí advokátovi sjednanou odměnu podle počtu hodin právní služby. Při časově nenáročných poradách lze sazbu hodinové odměny poměrně snížit. Při řešení odborně náročné problematiky lze naopak odměnu poměrně zvýšit, stejně tak při řešení problematiky s cizím jazykovým prvkem. Tento druh odměny je často sjednáván v rodinněprávních věcech, jako je rozvod manželství, a při obhajobě obviněných v trestních věcech.",
   },
   {
     icon: <BiCommentCheck color="#c0b596" size="40px" />,
@@ -174,7 +171,7 @@ const awards = [
     icon: <BiPieChartAlt color="#c0b596" size="40px" />,
     title: "Smluvní odměna podílová",
     content:
-      "Smluvní odměna podílová je odměna, která je dohodou stran stanovena jako podíl podle výsledku věci (tj. procentem z nároku ve věci přiznaného).",
+      "Smluvní odměna podílová je odměna, která je dohodou stran stanovena jako podíl podle výsledku věci (tj. procentem z nároku ve věci přiznaného). Výše procentní sazby, resp. podílu z výsledku sporu, je sjednávána v závislosti na hodnotě sporu, náročnosti případu a riziku neúspěchu. Tato odměna bývá uplatňována v případech, kdy není jistý výsledek sporu a klient není ochoten nést riziko případného neúspěchu. Riziko tak na základě dohody nese advokát, tj. pokud dojde k úspěchu ve věci je odměna vyšší než u časové nebo úkonové odměny, avšak v případě neúspěchu je odměna minimální nebo žádná.",
   },
 ];
 
@@ -183,7 +180,7 @@ const portfolioItem = [
     images: partner1,
     title: "Auto pokorný Brno",
     url: "http://www.autopokorny.cz/",
-    links: [{ text: "autopokorny.cz" }, { text: "renaultbrno.cz" }, { text: "daciabrno.cz" }],
+    links: [{ text: "autopokorny.cz" }],
   },
   {
     images: partner2,

@@ -4,7 +4,7 @@ import "./style.scss";
 
 const Partners = ({ title, subTitle, className, portfolioItem }) => {
   return (
-    <div className={className} id="partneri">
+    <div className={className} id="partneri" style={{ marginTop: "20px" }}>
       <div className="container">
         <div className="row">
           <div className="col-12">

@@ -151,8 +151,15 @@ const services = [
   {
     icon: <BiMoney color="#c0b596" size="40px" />,
     title: "Směnečné a šekové právo",
-    content:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ",
+    content: (
+      <ul>
+        <li>- Příprava smluv zajištěných směnkami</li>
+        <li>- Indosamenty směnek a biancosměnek</li>
+        <li>- Zastupování v soudních řízeních týkajících se vymáhání směnečných pohledávek</li>
+        <li>- Zastupování v soudních řízeních při obraně dlužníků proti uplatnění směnečných pohledávek</li>
+        <li>- Zastupování při jednáních s obchodními partnery klienta</li>
+      </ul>
+    ),
   },
   {
     icon: <BiFile color="#c0b596" size="40px" />,
@@ -168,8 +175,12 @@ const services = [
   {
     icon: <BiStreetView color="#c0b596" size="40px" />,
     title: "Mezinárodní právo soukromé",
-    content:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ",
+    content: (
+      <ul>
+        <li>- Vymezení vztahů s mezinárodním prvkem</li>
+        <li>- Vymezení druhů norem mezinárodního práva soukromého a vztahů mezi nimi</li>
+      </ul>
+    ),
   },
   {
     icon: <BiBookOpen color="#c0b596" size="40px" />,
