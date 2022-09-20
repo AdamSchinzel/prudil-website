@@ -24,7 +24,7 @@ const HeaderBottom = ({ className }) => {
                 </a>
               </div>
             </div>
-            <div className="col-lg-8 responsiveWrapper">
+            <div className={responsive ? "col-lg-8 responsiveWrapper active" : "col-lg-8 responsiveWrapper"}>
               <ul className="mainMenuWrap">
                 <li>
                   <a href="/#zamereni">Zaměření</a>
