@@ -57,7 +57,7 @@ const Articles = ({ className }) => {
           </div>
           <div className="col-lg-7 offset-lg-1 col-md-6">
             <div className="testimonialContent">
-              <span>Napsali o nás</span>
+              <span>Naše publikace</span>
               <h2>Články</h2>
               <Slider className="testmonialSlider" {...settings}>
                 {sliders.map((slider, i) => (
