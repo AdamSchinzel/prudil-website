@@ -5,7 +5,7 @@ import {
   BiDetail,
   BiCommentCheck,
   BiPulse,
-  BiBuildings,
+  BiMoney,
   BiBriefcaseAlt,
   BiRun,
   BiBody,
@@ -76,27 +76,6 @@ const services = [
     ),
   },
   {
-    icon: <BiBuildings color="#c0b596" size="40px" />,
-    title: "Obchodní a korporační právo",
-    content: (
-      <ul>
-        <li>- Obchodní právo pro subjekty ze zdravotnictví</li>
-        <li>- Zakládání obchodních korporací</li>
-        <li>- Změny v obchodních korporacích</li>
-        <li>- Organizace řízení valných hromad</li>
-        <li>- Zastupování při jednáních s obchodními partnery klienta</li>
-        <li>- Obchodní rejstřík - veškerá agenda</li>
-        <li>- Likvidace obchodních společností</li>
-        <li>- Nekalá soutěž</li>
-        <li>- Prodej a transformace závodu</li>
-        <li>
-          - Obchodní smlouvy pojmenované i nepojmenované (smlouva kupní, o obchodním zastoupení, o výhradním prodeji, o
-          dílo, o přepravě)
-        </li>
-      </ul>
-    ),
-  },
-  {
     icon: <BiBody color="#c0b596" size="40px" />,
     title: "Rodinné právo",
     content: (
@@ -142,6 +121,19 @@ const services = [
         <li>- Azylové právo</li>
         <li>- Právo sociálního zabezpečení (starobní důchod, invalidní důchod)</li>
         <li>- Správní právo pro subjekty ze zdravotnictví</li>
+      </ul>
+    ),
+  },
+  {
+    icon: <BiMoney color="#c0b596" size="40px" />,
+    title: "Směnečné a šekové právo",
+    content: (
+      <ul>
+        <li>- Příprava smluv zajištěných směnkami</li>
+        <li>- Indosamenty směnek a biancosměnek</li>
+        <li>- Zastupování v soudních řízeních týkajících se vymáhání směnečných pohledávek</li>
+        <li>- Zastupování v soudních řízeních při obraně dlužníků proti uplatnění směnečných pohledávek</li>
+        <li>- Zastupování při jednáních s obchodními partnery klienta</li>
       </ul>
     ),
   },

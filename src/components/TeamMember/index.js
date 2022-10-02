@@ -13,7 +13,7 @@ import teamMember4 from "../../images/team/4.jpg";
 
 // docs
 import cv1 from "../../images/team/lukas-prudil-cv.doc";
-import cv2 from "../../images/team/leona-prudilova(musilova)-cv.pdf";
+import cv2 from "../../images/team/leona-prudilova-cv.pdf";
 import cv3 from "../../images/team/vendula-kalova-cv.docx";
 import cv4 from "../../images/team/martina-karaskova-cv.pdf";
 

@@ -2,14 +2,12 @@ import React from "react";
 import {
   BiPulse,
   BiBookBookmark,
-  BiBuildings,
   BiMoney,
   BiBookOpen,
   BiBriefcaseAlt,
   BiRun,
   BiBody,
   BiBadgeCheck,
-  BiFile,
   BiStreetView,
 } from "react-icons/bi";
 import HeaderBottom from "../../../components/HeaderBottom";
@@ -54,23 +52,20 @@ const services = [
     ),
   },
   {
-    icon: <BiBuildings color="#c0b596" size="40px" />,
-    title: "Obchodní a korporační právo",
+    icon: <BiBody color="#c0b596" size="40px" />,
+    title: "Rodinné právo",
     content: (
       <ul>
-        <li>- Obchodní právo pro subjekty ze zdravotnictví</li>
-        <li>- Zakládání obchodních korporací</li>
-        <li>- Změny v obchodních korporacích</li>
-        <li>- Organizace řízení valných hromad</li>
-        <li>- Zastupování při jednáních s obchodními partnery klienta</li>
-        <li>- Obchodní rejstřík - veškerá agenda</li>
-        <li>- Likvidace obchodních společností</li>
-        <li>- Nekalá soutěž</li>
-        <li>- Prodej a transformace závodu</li>
         <li>
-          - Obchodní smlouvy pojmenované i nepojmenované (smlouva kupní, o obchodním zastoupení, o výhradním prodeji, o
-          dílo, o přepravě)
+          - Vztahy mezi rodiči a dětmi (svěření do péče, úprava vztahů, vyživovací povinnost, alimenty) Vztahy mezi
+          rodiči a dětmi (svěření do péče, úprava vztahů, vyživovací povinnost, alimenty)
         </li>
+        <li>- Řízení o osvojení dítěte</li>
+        <li>- Právní aspekty náhradního mateřství</li>
+        <li>- Nezletilí, výživné</li>
+        <li>- Majetková práva manželů</li>
+        <li>- Rozvody manželství</li>
+        <li>- Vypořádání majetku po skončení manželství</li>
       </ul>
     ),
   },
@@ -106,6 +101,19 @@ const services = [
     ),
   },
   {
+    icon: <BiMoney color="#c0b596" size="40px" />,
+    title: "Směnečné a šekové právo",
+    content: (
+      <ul>
+        <li>- Příprava smluv zajištěných směnkami</li>
+        <li>- Indosamenty směnek a biancosměnek</li>
+        <li>- Zastupování v soudních řízeních týkajících se vymáhání směnečných pohledávek</li>
+        <li>- Zastupování v soudních řízeních při obraně dlužníků proti uplatnění směnečných pohledávek</li>
+        <li>- Zastupování při jednáních s obchodními partnery klienta</li>
+      </ul>
+    ),
+  },
+  {
     icon: <BiBookBookmark color="#c0b596" size="40px" />,
     title: "Občanské právo",
     content: (
@@ -127,48 +135,6 @@ const services = [
         <li>- Zakládání právnických osob (s.r.o., spolků apod.)</li>{" "}
         <li>- Civilní žaloby a zastupování při všech civilních věcech a ve všech stádiích civilního řízení</li>
         <li>- Stížnosti k Evropskému soudu pro lidská práva do Štrasburku</li>
-      </ul>
-    ),
-  },
-  {
-    icon: <BiBody color="#c0b596" size="40px" />,
-    title: "Rodinné právo",
-    content: (
-      <ul>
-        <li>
-          - Vztahy mezi rodiči a dětmi (svěření do péče, úprava vztahů, vyživovací povinnost, alimenty) Vztahy mezi
-          rodiči a dětmi (svěření do péče, úprava vztahů, vyživovací povinnost, alimenty)
-        </li>
-        <li>- Řízení o osvojení dítěte</li>
-        <li>- Právní aspekty náhradního mateřství</li>
-        <li>- Nezletilí, výživné</li>
-        <li>- Majetková práva manželů</li>
-        <li>- Rozvody manželství</li>
-        <li>- Vypořádání majetku po skončení manželství</li>
-      </ul>
-    ),
-  },
-  {
-    icon: <BiMoney color="#c0b596" size="40px" />,
-    title: "Směnečné a šekové právo",
-    content: (
-      <ul>
-        <li>- Příprava smluv zajištěných směnkami</li>
-        <li>- Indosamenty směnek a biancosměnek</li>
-        <li>- Zastupování v soudních řízeních týkajících se vymáhání směnečných pohledávek</li>
-        <li>- Zastupování v soudních řízeních při obraně dlužníků proti uplatnění směnečných pohledávek</li>
-        <li>- Zastupování při jednáních s obchodními partnery klienta</li>
-      </ul>
-    ),
-  },
-  {
-    icon: <BiFile color="#c0b596" size="40px" />,
-    title: "Insolvenční právo",
-    content: (
-      <ul>
-        <li>- Zastupování insolvenčních věřitelů, úpadců</li>
-        <li>- Přihlášky ohledávek, oddělené uspokojení</li>
-        <li>- Spory konkursem vyvolané - incidenční, excindační</li>
       </ul>
     ),
   },
