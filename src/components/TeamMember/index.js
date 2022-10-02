@@ -11,36 +11,40 @@ import teamMember2 from "../../images/team/2.jpg";
 import teamMember3 from "../../images/team/3.jpg";
 import teamMember4 from "../../images/team/4.jpg";
 
+// docs
+import cv1 from "../../images/team/lukas-prudil-cv.doc";
+import cv2 from "../../images/team/leona-prudilova(musilova)-cv.pdf";
+import cv3 from "../../images/team/vendula-kalova-cv.docx";
+import cv4 from "../../images/team/martina-karaskova-cv.pdf";
+
 const teams = [
   {
     name: "JUDr. Ing. Lukáš Prudil, Ph.D.",
     level: "Advokát",
     image: teamMember1,
     socialMedia: [],
+    path: cv1,
   },
   {
     name: "Mgr. Leona Prudilová",
     level: "Advokátka",
     image: teamMember2,
     socialMedia: [],
-  },
-  {
-    name: "Mgr. Ivana Honzová",
-    level: "Spolupracující advokátka",
-    image: teamMember3,
-    socialMedia: [],
+    path: cv2,
   },
   {
     name: "Mgr. Vendulka Kalová",
     level: "Spolupracující advokátka",
     image: teamMember4,
     socialMedia: [],
+    path: cv3,
   },
   {
     name: "Bc. Martina Karásková, DiS.",
     level: "Vedoucí kanceláře",
     image: teamMember4,
     socialMedia: [],
+    path: cv4,
   },
 ];
 
@@ -89,20 +93,15 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
               <Slider className="teamSlideArea" {...settings}>
                 {teams.map((team, i) => (
                   <div key={i} className="teamWrapper">
-                    <div className="teamImage">
-                      <img src={team.image} alt="" />
-                    </div>
                     <div className="teamContent">
                       <h3>{team.name}</h3>
                       <span>{team.level}</span>
                       <ul>
-                        {team.socialMedia.map((social) => (
-                          <li key={social}>
-                            <a href="#">
-                              <i className={`fa fa-${social}`} aria-hidden="true"></i>
-                            </a>
-                          </li>
-                        ))}
+                        <li>
+                          <a href={team.path} download>
+                            CV
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </div>
