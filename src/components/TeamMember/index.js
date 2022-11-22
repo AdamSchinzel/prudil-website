@@ -7,15 +7,17 @@ import "./style.scss";
 
 // images
 import teamMember1 from "../../images/team/1.png";
-import teamMember2 from "../../images/team/2.jpg";
-import teamMember3 from "../../images/team/3.jpg";
-import teamMember4 from "../../images/team/4.jpg";
+import teamMember2 from "../../images/team/2.png";
+import teamMember3 from "../../images/team/3.png";
+import teamMember4 from "../../images/team/4.png";
+import teamMember5 from "../../images/team/5.png";
 
 // docs
 import cv1 from "../../images/team/lukas-prudil-cv.doc";
 import cv2 from "../../images/team/leona-prudilova-cv.pdf";
 import cv3 from "../../images/team/vendula-kalova-cv.docx";
 import cv4 from "../../images/team/martina-karaskova-cv.pdf";
+import cv5 from "../../images/team/ondrej-pechl-cv.pdf";
 
 const teams = [
   {
@@ -35,7 +37,7 @@ const teams = [
   {
     name: "Mgr. Vendulka Kalová",
     level: "Spolupracující advokátka",
-    image: teamMember4,
+    image: teamMember3,
     socialMedia: [],
     path: cv3,
   },
@@ -45,6 +47,13 @@ const teams = [
     image: teamMember4,
     socialMedia: [],
     path: cv4,
+  },
+  {
+    name: "Mgr. Ondřeje Pejchl",
+    level: "Advokátní koncipient",
+    image: teamMember5,
+    socialMedia: [],
+    path: cv5,
   },
 ];
 
@@ -93,6 +102,9 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
               <Slider className="teamSlideArea" {...settings}>
                 {teams.map((team, i) => (
                   <div key={i} className="teamWrapper">
+                    <div className="teamImage">
+                      <img src={team.image} alt={team.name} />
+                    </div>
                     <div className="teamContent">
                       <h3>{team.name}</h3>
                       <span>{team.level}</span>
