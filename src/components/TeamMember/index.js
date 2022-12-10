@@ -49,7 +49,7 @@ const teams = [
     path: cv4,
   },
   {
-    name: "Mgr. Ondřeje Pejchl",
+    name: "Mgr. Ondřej Pejchl",
     level: "Advokátní koncipient",
     image: teamMember5,
     socialMedia: [],

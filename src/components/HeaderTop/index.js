@@ -14,10 +14,10 @@ const HeaderTop = ({ className }) => {
                   <BiMap color="#c0b596" size="20px" style={{ marginRight: "5px" }} />
                   Bašty 416/8, 602 00, Brno
                 </li>
-                <a href="tel: +420773601593" className="ml-2">
+                <a href="tel: +420542210593" className="ml-2">
                   <li>
                     <BiPhone color="#c0b596" size="20px" style={{ marginRight: "5px" }} />
-                    +420 773 601 593
+                    +420 542 210 593
                   </li>
                 </a>
               </ul>
