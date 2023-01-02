@@ -4,11 +4,11 @@
     overflow: hidden;
     box-shadow: 1px 1px 5px rgba(0, 0, 5, 0.08);
     position: relative;
-
     .teamImage {
       border: 1px solid #fff;
       border-bottom: none;
-      max-height: 370px;
+      max-height: 370px !important;
+      overflow: hidden;
     }
     .teamContent {
       position: relative;

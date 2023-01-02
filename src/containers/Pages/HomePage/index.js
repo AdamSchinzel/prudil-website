@@ -206,7 +206,7 @@ const HomePage = () => {
         <HeaderTop className="headerTop" />
         <HeaderBottom className="headerBottomArea" />
       </header>
-      <HeroSlider sliders={heroSliders} className="heroSliderArea" />
+      <HeroSlider slider sliders={heroSliders} className="heroSliderArea" />
       <ServiceArea
         className="ourServiceArea"
         title="Zaměření"
