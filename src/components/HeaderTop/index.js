@@ -23,7 +23,7 @@ const HeaderTop = ({ className }) => {
               </ul>
             </div>
             <div className="col-lg-2 col-md-3 col-sm-12">
-              <div className="btnStyle btnStyle2 text-right">
+              <div className="btnStyle">
                 <a href="mailto: info@prudil.cz">Napište nám</a>
               </div>
             </div>

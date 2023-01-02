@@ -45,6 +45,7 @@
       &.accountLoginArea {
         @media (max-width: 576px) {
           justify-content: center !important;
+          flex-direction: column;
         }
         li {
           padding-left: 0;
