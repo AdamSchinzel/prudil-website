@@ -35,13 +35,6 @@ const teams = [
     path: cv2,
   },
   {
-    name: "Mgr. Vendulka Kalová",
-    level: "Spolupracující advokátka",
-    image: teamMember3,
-    socialMedia: [],
-    path: cv3,
-  },
-  {
     name: "Bc. Martina Karásková, DiS.",
     level: "Vedoucí kanceláře",
     image: teamMember4,
